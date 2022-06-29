@@ -38,10 +38,13 @@ model Note {
 }
 
 model Piece {
-  category String @id
   name String 
+  synopsis String @id
+  link String
+  category String 
   composer String
   description String
+  rating Int
   
 
   createdAt DateTime @default(now())
